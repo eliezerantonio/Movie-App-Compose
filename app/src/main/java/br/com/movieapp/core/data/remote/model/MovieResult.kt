@@ -3,6 +3,7 @@ package br.com.movieapp.core.data.remote.model
 import com.google.gson.annotations.SerializedName
 
 data class MovieResult(
+
     @SerializedName("adult")
     val adult: Boolean,
     @SerializedName("backdrop_path")

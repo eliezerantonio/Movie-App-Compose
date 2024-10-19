@@ -29,7 +29,7 @@ data class MovieDetailResponse(
     val originalLanguage: String,
     @SerializedName("original_title")
     val originalTitle: String,
-    @SerializedName("adult")
+    @SerializedName("overview")
     val overview: String,
     @SerializedName("popularity")
     val popularity: Double,

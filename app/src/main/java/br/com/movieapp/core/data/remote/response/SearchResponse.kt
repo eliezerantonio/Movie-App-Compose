@@ -4,7 +4,6 @@ import br.com.movieapp.core.data.remote.model.SearchResult
 import com.google.gson.annotations.SerializedName
 
 data class SearchResponse(
-
     @SerializedName("page")
     val page: Int,
     @SerializedName("results")

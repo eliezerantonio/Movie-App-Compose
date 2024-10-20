@@ -16,8 +16,7 @@ class ParamsInterceptor : Interceptor {
         val newRequest = request.newBuilder()
             .url(url)
             .build()
-
+        
         return chain.proceed(newRequest)
-
     }
 }

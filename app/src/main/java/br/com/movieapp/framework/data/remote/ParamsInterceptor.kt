@@ -1,7 +1,7 @@
-package br.com.movieapp.core.data.remote
+package br.com.movieapp.framework.data.remote
 
 import br.com.movieapp.BuildConfig
-import br.com.movieapp.core.data.util.Constants
+import br.com.movieapp.framework.util.Constants
 import okhttp3.Interceptor
 import okhttp3.Response
 
@@ -16,7 +16,7 @@ class ParamsInterceptor : Interceptor {
         val newRequest = request.newBuilder()
             .url(url)
             .build()
-        
+
         return chain.proceed(newRequest)
     }
 }

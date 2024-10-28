@@ -9,7 +9,6 @@ object UtilFunctions {
     }
 
     fun logInfo(tag: String, message: String) {
-
         Timber.tag(tag).e("Info -> $message")
     }
 }

@@ -1,4 +1,4 @@
-package br.com.movieapp.core.domain
+package br.com.movieapp.core.domain.model
 
 data class Movie(
     val id: Int,

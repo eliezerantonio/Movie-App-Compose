@@ -50,5 +50,5 @@ fun MovieRate(rate: Double, modifier: Modifier) {
 @Composable
 fun MovieRatePreview() {
 
-    MovieRate(7.1, modifier = Modifier)
+//    MovieRate(7.1, modifier = Modifier)
 }

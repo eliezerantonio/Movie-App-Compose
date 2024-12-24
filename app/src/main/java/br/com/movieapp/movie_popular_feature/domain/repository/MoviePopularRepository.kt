@@ -10,6 +10,4 @@ interface MoviePopularRepository {
 
     fun getPopularMovies(pagingConfig: PagingConfig): Flow<PagingData<Movie>>
 
-
-
 }

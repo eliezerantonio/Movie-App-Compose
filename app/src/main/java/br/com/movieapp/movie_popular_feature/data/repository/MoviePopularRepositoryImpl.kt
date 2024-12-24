@@ -1,4 +1,4 @@
-package br.com.movieapp.movie_popular_feature.repository
+package br.com.movieapp.movie_popular_feature.data.repository
 
 import androidx.paging.Pager
 import androidx.paging.PagingConfig

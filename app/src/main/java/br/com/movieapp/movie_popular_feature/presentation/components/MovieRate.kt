@@ -1,4 +1,4 @@
-package br.com.movieapp.movie_popular_feature.domain.presentation.components
+package br.com.movieapp.movie_popular_feature.presentation.components
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row

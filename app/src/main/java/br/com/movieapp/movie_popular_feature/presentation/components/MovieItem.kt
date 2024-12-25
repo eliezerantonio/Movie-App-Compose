@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Card
+import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -34,7 +35,6 @@ fun MovieItem(
 
 
     Box(modifier = modifier) {
-
         MovieRate(
             rate = voteAverage, modifier = Modifier
                 .align(Alignment.BottomStart)
@@ -52,10 +52,11 @@ fun MovieItem(
                     onClick(id)
                 }, shape = RoundedCornerShape(8.dp)
         ) {
-
             Box {
+
                 AsyncImage(
-                    model = ImageRequest.Builder(LocalContext.current).data(imageUrl)
+                    model = ImageRequest.Builder(LocalContext.current)
+                        .data(imageUrl)
                         .crossfade(true)
                         .error(R.drawable.ic_error_image)
                         .placeholder(R.drawable.ic_placeholder).build(),

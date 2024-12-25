@@ -18,7 +18,6 @@ fun MoviePopularScreen(uiState: MoviePopularState, navigateToDetailMovie: (Int) 
 
     val movies = uiState.movies.collectAsLazyPagingItems()
 
-    UtilFunctions.logInfo("MOVIE_ID", " items: ${movies.itemCount}")
     Scaffold(
         topBar = {
             TopAppBar(
